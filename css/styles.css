@@ -444,7 +444,62 @@ Services
 ===============
 */
 /* small screen layout setup */
+
 /* bg-grey in globals */
+.bg-grey {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  background: var(--clr-white);
+  margin-bottom: 2rem;
+  padding: 3rem 1.5rem;
+  transition: var(--transition);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  /* transition: var(--transition); */
+}
+
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+
+.service p {
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+.service:hover .underline {
+  background: var(--clr-white);
+}
+
+/* big screen layout setup */
+@media screen and (min-width: 676px) {
+  .service-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service-center {
+    grid-template-columns: ;
+  }
+}
 
 /*
 =============== 
