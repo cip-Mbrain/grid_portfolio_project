@@ -216,6 +216,21 @@ Navbar
   display: none;
 }
 
+.nav-logo {
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: var(--clr-grey-1);
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 2rem;
+  padding: 0.75rem 1rem;
+  text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.28);
+}
+
+.brain {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+}
 /* nav big screen */
 @media screen and (min-width: 768px) {
   .nav {
@@ -340,17 +355,14 @@ Sidebar
 Hero
 ===============
 */
-.hero .underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
 
 .hero-img {
-  display: none;
+  margin-top: 1.5rem;
 }
 
 .hero {
   background: var(--clr-primary-10);
+  padding-bottom: 1rem;
 }
 
 .hero-center {
@@ -374,6 +386,7 @@ Hero
   .hero-img {
     display: block;
     position: relative;
+    margin-top: 0;
   }
   .hero-center {
     grid-template-columns: repeat(2, 1fr);
